@@ -195,7 +195,8 @@ tr:nth-child(even) {
 
 .footer {
     background-color:#15151e;
-    height: 400px
+    height: 400px;
+    margin-top: 125px;
 }
 
 /* line */
