@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+/* menu */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+#logo img {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.menu {
+    height: 55px;
+    background-color: rgb(199, 12, 12);
+  
+}
+
+#Calendar {
+    float: left;
+    width: 25%;
+    font-size: 27px;
+    padding: 5px; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    
+}
+
+#Drivers {
+    float: left;
+    width: 25%;
+    font-size: 27px;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#Teams {
+    float: left;
+    width: 25%;
+    font-size: 27px;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#Standings {
+    float: left;
+    width: 21%;
+    font-size: 27px;
+    padding: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#Calendar :hover, #Drivers :hover , #Teams :hover , #Standings :hover {
+    font-size: 30px;  
+}
+
+
+/* Standings */
+
+.year {
+    font-size: 58px;
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.left {
+    transform: rotate(125deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.right {
+    transform: rotate(315deg);
+    -webkit-transform: rotate(319deg);
+}
+
+.arrow {
+    border: solid rgb(199, 12, 12);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 13px;
+    margin-bottom: 2px;
+}
+
+.string {
+    font-size: 70px;
+    text-align: center;
+    margin-top:60px;
+    font-family: arial, sans-serif;
+}
+.column1 {
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+    width: 11%;
+    float: left;
+    margin-left: 40px;
+   
+}
+
+.column2 {
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+    width: 11%;
+    float: right;
+    margin-right: 40px;
+   
+}
+
+.column1 a, .column2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.choosingtable td {
+    text-align: center;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.choosingtable table :hover {
+    background-color: rgb(248, 47, 47);
+}
+
+.standingstable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+  
+td, th {
+    border: 1px solid #dfdfdf;
+    padding: 22px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.textovertable {
+    font-family: arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.driversorteams {
+    text-align: center;
+    font-size: 25px;
+    font-family: arial, sans-serif;
+}
+
+.driversorteams div {
+    display: inline-block;
+
+}
+
+.driversorteams a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/* Footer */
+
+.footer {
+    background-color:#15151e;
+    height: 400px
+}
+
+/* line */
+
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(175, 24, 24);
+    margin-bottom: 120px;
+    margin-top: 120px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+/* Scroll to top button */
+
+#scrollTop  {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+#scrollTop img {
+    height: 55px;
+    width: 55px;
+}
+
+#scrollTop :hover {
+    height: 63px;
+    width: 63px;
+}
+
+/* Drivers */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
+.choosing {
+    text-align: center;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+   
+}
+
+/* Charles Leclerc  */
+
+.charlesleclerc img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.charlesleclerc {
+    display: flex;
+    align-items: center;
+
+}
+
+.textnextoimage  {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0b0b0;
+
+}
+
+br {
+    content: "";
+    margin: 12px;
+    display: block;
+  }
+
+.textunderimage {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0b0b0;
+}
+
+.textunderimage :hover {
+    text-decoration: underline;
+}
+
+.readmore {
+    color: rgb(246, 10, 10);
+    text-decoration: none;
+}
+
+
+.container2 {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.drivername {
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 150px;
+}
+
+.drivercountryflag img  {
+    height: 100px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+/* Max Verstappen  */
+
+.maxverstappen img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.maxverstappen {
+    display: flex;
+    align-items: center;
+
+}
+
+.textnextoimage2  {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0b0b0;
+    margin-left: 35px;
+}
+
+/* Lewis Hamilton */
+
+.lewishamilton img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.lewishamilton {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Sergio Perez  */
+
+.sergioperez img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.sergioperez {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Carlos Sainz */
+
+.carlossainz img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.carlossainz {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Lando Norris */
+
+.landonorris img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.landonorris {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Georgre Ruseel */
+
+.georgerussel img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.georgerussel {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Fernando Alonso  */
+
+.fernandoalonso img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.fernandoalonso {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Daniel Ricciardo */
+
+.danielricciardo img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.danielricciardo {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Esteban Ocon  */
+
+.estebanocon img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.estebanocon {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Pierre Gasly  */
+
+.pierregasly img {
+    width: 400px;
+    height: 300px;
+  
+}
+
+.pierregasly {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Yuki Tsunoda  */
+
+.yukitsunoda img {
+    width: 450px;
+    height: 300px;
+  
+}
+
+.yukitsunoda {
+    display: flex;
+    align-items: center;
+
+}
