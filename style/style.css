@@ -235,7 +235,7 @@ tr:nth-child(even) {
 #scrollTop :hover {
     height: 63px;
     width: 63px;
-    transition: 0.25s ease 0.05s;
+    transition: 0.25s ease 0.025s;
 }
 
 /* Drivers */
