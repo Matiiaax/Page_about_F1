@@ -138,8 +138,8 @@ body {
 
 .choosingtable td {
     text-align: center;
-    padding: 6px;
-    font-size: 14px;
+    padding: 7px;
+    font-size: 13px;
     background-color: #fafafa;
 }
 
@@ -196,7 +196,7 @@ tr:nth-child(even) {
 .footer {
     background-color:#15151e;
     height: 400px;
-    margin-top: 125px;
+    margin-top: 150px;
 }
 
 /* line */
@@ -220,8 +220,11 @@ tr:nth-child(even) {
     position: fixed;
     bottom: 30px;
     right: 20px;
-    transition: all 0.5s ease 0s;
+    transition: all 10s ease 0s;
     cursor: pointer;
+
+
+  
 }
 
 #scrollTop img {
@@ -232,6 +235,7 @@ tr:nth-child(even) {
 #scrollTop :hover {
     height: 63px;
     width: 63px;
+    transition: 0.25s ease 0.05s;
 }
 
 /* Drivers */
