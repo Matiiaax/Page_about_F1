@@ -72,10 +72,11 @@ body {
 .menu a {
     text-decoration: none;
     color: white;
+    transition: font-size .1s ;
 }
 
-#Calendar :hover, #Drivers :hover , #Teams :hover , #Standings :hover {
-    font-size: 30px;  
+.menu :hover {
+    font-size: 30px;
 }
 
 
@@ -178,6 +179,7 @@ tr:nth-child(even) {
     text-align: center;
     font-size: 25px;
     font-family: arial, sans-serif;
+    transition: font-size .1s ease;
 }
 
 .driversorteams div {
@@ -188,8 +190,15 @@ tr:nth-child(even) {
 .driversorteams a {
     text-decoration: none;
     color: black;
+    transition: font-size .1s;
 
 }
+
+.driversorteams  :hover {
+    font-size: 28px;
+}
+
+
 
 /* Footer */
 
@@ -230,12 +239,12 @@ tr:nth-child(even) {
 #scrollTop img {
     height: 55px;
     width: 55px;
+    transition: height .1s, width .1s;
 }
 
 #scrollTop :hover {
     height: 63px;
     width: 63px;
-    transition: 0.25s ease 0.025s;
 }
 
 /* Drivers */
