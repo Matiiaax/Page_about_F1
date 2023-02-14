@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
 
     <body>
@@ -27,13 +29,116 @@
                 <a href="Zespoły.html">Zespoły</a> 
             </div>
             <div id="Standings">
-                <a href="Klasyfikacja.html">Klasyfikacja</a>
+                <a href="klasyfikacja2023.html">Klasyfikacja</a>
             </div>
         </div>
         
+        <style>
+            .dropbtn {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background-color: red;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            overflow: hidden;
+            font-size: 15px;
+            cursor: pointer;
+            align-items: center;
+            padding: 0 30px;
+            color: white;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #fa5252;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              display: flex;
+              justify-content: center;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              border-radius: 25px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              text-align: center;
+              overflow-y: scroll;
+              height: 170px;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {display: block;}
 
+            .icon {
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 0 0 30px;
+            color: white;
+        }
 
+            </style>
+            
+            <h2>Clickable Dropdown</h2>
+            <p>Click on the button to open the dropdown menu.</p>
+            
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                Kierowcy
+              <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+            </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Charles Leclerc</a>
+                <a href="#about">Max Verstappen</a>
+                <a href="#contact">Lewis Hamilton</a>
+                <a href="#contact">Lewis Hamilton</a>
+                <a href="#contact">Lewis Hamilton</a>
+                <a href="#contact">Lewis Hamilton</a>
+                <a href="#contact">Lewis Hamilton</a>
+              </div>
+            </div>
+            
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
 
 

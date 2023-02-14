@@ -8,9 +8,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
     </head>
 
     <body>
+
 
         <div id="logo">
             <a href="index.html"><img src="images/logof1.jpg"></a>
@@ -27,87 +30,59 @@
                 <a href="Zespoły.html">Zespoły</a> 
             </div>
             <div id="Standings">
-                <a href="Klasyfikacja.html">Klasyfikacja</a>
+                <a href="klasyfikacja2023.html">Klasyfikacja</a>
             </div>
         </div>
-        <div class="choosingtable">
-            <div class="string">
-                <em>Kierowcy sezonu 2022</em>
+        <!-- <div class="choosingtable"> -->
+
+        <div class="drop_downListandHeader">
+
+            <div class="dropDownButton">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        Kierowcy
+                    <ion-icon name="chevron-down-outline" class="icon"></ion-icon>
+                </button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#leclercanchor">Charles Leclerc</a>
+                    <a href="#maxanchor">Max Verstappen</a>
+                    <a href="#hamiltonanchor">Lewis Hamilton</a>
+                    <a href="#sainzanchor">Carlos Sainz</a>
+                    <a href="#sergioperezanchor">Sergio Perez</a>
+                    <a href="#russelanchor">George Russel</a>
+                    <a href="#alosnoanchor">Fernando Alosno</a>
+                    <a href="#norrisanchor">Lando Norris</a>
+                    <a href="#ricciardoanchor">Daniel Ricciardo</a>
+                    <a href="#zhouanchor">Zhou Guanyu</a>
+                    <a href="#oconanchor">Esteban Ocon</a>
+                    <a href="#gaslyanchor">Pierre Gasly</a>
+                    <a href="#tsunodaanchor">Yuki Tsunoda</a>
+                    <a href="#bottasanchor">Valtteri Bottas</a>
+                    <a href="#magnussenanchor">Kevin Magnussen</a>
+                    <a href="#schumacheranchor">Mick Schumacher</a>
+                    <a href="#latifianchor">Nicholas Latifi</a>
+                    <a href="vettelanchor">Sebastain Vettel</a>
+                    <a href="#strollanchor">Lance Stroll</a>
+                    <a href="albonanchor">Alex Albon</a>
+                    
+
+                    </div>
+                </div>
             </div>
 
-        <div onclick="ScrollToTop()" id="scrollTop">
-            <img src="images/arrow.png">
-        </div>
+                <div class="headerText">
+                    <span id="text">Kierowcy sezonu 2022</span>
+                </div>
 
-        <script src="script.js"></script>
-
-        <table class="column1">
-            <tr>
-                <td><a href="#leclercanchor">Charles Leclerc</td></a>
-            </tr>
-            <tr>
-                <td><a href="#maxanchor">Max Verstappen</a></td>
-            </tr>
-            <tr>
-                <td><a href="#hamiltonanchor">Lewis Hamilton</td></a>
-            </tr>
-            <tr>
-                <td><a href="#sainzanchor">Carlos Sainz</a></td>
-            </tr>
-            <tr>
-               <td><a href="#sergioperezanchor">Sergio Perez</a></td>
-            </tr>
-            <tr>
-                <td><a href="#russelanchor">George Russel</a></td>
-            </tr>
-            <tr>
-                <td><a href="#alonsoanchor">Fernando Alonso</a></td>
-            </tr>
-            <tr>
-                <td><a href="#norrisanchor">Lando Norris</a></td>
-            </tr>
-            <tr>
-                <td><a href="#ricciardoanchor">Daniel Ricciardo</a></td>
-            </tr>
-            <tr>
-                <td><a href="#zhouanchor">Zhou Guanyu</a></td>
-            </tr>
-        </table>
-
-        <table class="column2">
-            <tr>
-                <td><a href="#oconanchor">Esteban Ocon</a></td>
-            </tr>
-            <tr>
-                <td><a href="#gaslyanchor">Pierre Gasly</a></td>
-            </tr>
-            <tr>
-                <td><a href="#tsunodaanchor">Yuki Tsunoda</a></td>
-            </tr>
-            <tr>
-                <td><a  href="#bottasanchor">Valtteri Bottas</a></td>
-            </tr>
-            <tr>
-               <td><a href="#magnussenanchor">Kevin Magnussen</a></td>
-            </tr>
-            <tr>
-                <td><a href="#schumacheranchor">Mick Schumacher</a></td>
-            </tr>
-            <tr>
-                <td><a href="#latifianchor">Nicholas Latifi</a></td>
-            </tr>
-            <tr>
-                <td><a href="#vettelanchor">Sebastain Vettel</a></td>
-            </tr>
-            <tr>
-                <td><a href="#strollanchor">Lance Stroll</a></td>
-            </tr>
-            <tr>
-                <td><a href="#albonanchor">Alexander Albon</a></td>
-            </tr>
-        </table>
+            </div>
 
         </div>
+
+        <button id="ScrollBtn" onclick="topFunction()">
+            <i class="material-icons">expand_less</i>
+        </button>
+        <script src="scritps/scrollToTop.js"></script>
+
 
         <div class="container">
 
@@ -773,6 +748,10 @@
         <div class="footer">
             
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="scritps/dropDownList.js"></script>
         
 
 

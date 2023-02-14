@@ -8,7 +8,3 @@ function scrollfunction() {
                 mybtn.style.display = "none";
                 }
     }
-
-function ScrollToTop() {
-    window.scrollTo(0,0);
-}

@@ -105,7 +105,7 @@ body {
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 13px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .string {
@@ -122,6 +122,29 @@ body {
     margin-left: 40px;
    
 }
+
+.drop_downListandHeader {
+    margin-top: 50px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.dropDownButton {
+    width: 30%;
+    float: left;
+}
+
+.headerText {
+    width: 40%;
+    float: left;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 70px;
+}
+
+
+
 
 .column2 {
     border-collapse: collapse;
@@ -144,8 +167,9 @@ body {
     background-color: #fafafa;
 }
 
-.choosingtable table :hover {
-    background-color: rgb(248, 47, 47);
+.choosingtable tr :hover {
+    background-color: rgb(255, 90, 90);
+    color: white;
 }
 
 .standingstable {
@@ -161,9 +185,10 @@ td, th {
     border: 1px solid #dfdfdf;
     padding: 22px;
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Montserrat', sans-serif;
 }
+
   
 tr:nth-child(even) {
     background-color: #f1f1f1;
@@ -205,8 +230,9 @@ tr:nth-child(even) {
 .footer {
     background-color:#15151e;
     height: 400px;
-    margin-top: 150px;
+    margin-top: 150px;  
 }
+
 
 /* line */
 
@@ -224,28 +250,29 @@ tr:nth-child(even) {
 
 /* Scroll to top button */
 
-#scrollTop  {
+#ScrollBtn {
     display: none;
     position: fixed;
-    bottom: 30px;
-    right: 20px;
-    transition: all 10s ease 0s;
+    bottom: 40px;
+    right: 35px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(209, 0, 0);
+    color: white;
     cursor: pointer;
-
-
-  
+    border-radius: 50%;
+    transition: background-color 0.4s;
+    
 }
 
-#scrollTop img {
-    height: 55px;
-    width: 55px;
-    transition: height .1s, width .1s;
+
+#ScrollBtn:hover {
+    background-color: #ff3f3f;
 }
 
-#scrollTop :hover {
-    height: 63px;
-    width: 63px;
-}
+
 
 /* Drivers */
 
@@ -492,4 +519,83 @@ br {
     display: flex;
     align-items: center;
 
+}
+
+.tables {
+    display: inline-table;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+.dropbtn {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 18px;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    
+}
+
+.dropbtn button {
+    font-family: arial, sans-serif;
+}
+    
+.dropbtn:hover{
+      background-color: #fa5252;
+}
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left: 70px;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagbanwa&display=swap');
+    
+.dropdown-content {
+
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 180px;
+      border-radius: 20px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: center;
+      overflow-y: scroll;
+      height: 200px;
+      
+      
+    }
+    
+.dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+.dropdown a {
+    transition: 0.2s ease-out;
+}
+    
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 0 30px;
+    color: white;
 }
